@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.naglowek{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03D3E2;
+}
+.glowny{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px);
+    width: 100%;
+    background-color: #212529;
+}
+.wynik-okno{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+.stopka{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 70px;
+    background-color: #03D3E2;
+}
+.autor{
+    padding-left: 15px;
+}
+.col-auto{
+    display: flex;
+    flex-direction: column;
+}
+.dane_wej{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.radio-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Odstęp między elementami */
+    margin-bottom: 15px;
+}
+#zamknij_wynik{
+    float: right;
+}
+#card{
+    width: 18rem;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+@media (max-width: 350px) {
+     .form{
+        height: calc(90vh - 270px);
+        width: 290px;
+    }
+    .form *{
+        padding-left: 5px;
+    }
+    .glowny{
+        height: calc(100vh - 100px);
+    }
+    .stopka{
+        height: 50px;
+    }
+    .naglowek{
+        height: 50px;
+    }
+}
+@media (max-width: 290px) {
+
+   #card{
+    width: 16rem;
+   }
+}
+
+
